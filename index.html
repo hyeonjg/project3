@@ -40,6 +40,20 @@
 		input{display: none;}
 		#ch1:checked ~ #la1{background: yellow;}
 
+		.popup{
+			display: none;
+			position: fixed; top:50%; left:50%;
+			transform:translate(-50%,-50%);
+			width: 400px; height:400px; background: white;
+			border-radius: 20px; 
+		}
+		.plum input:checked + label + div{
+			display: block;
+		}
+		.lemon input:checked + label + div{
+			display: block;
+		}
+
 		nav{padding-top:10px;}
 		footer{padding-top:20px;}
 
@@ -72,23 +86,35 @@
 	<section class='hmain'>
 		<div class='mainscroll flex t-center'>
 
-			<input type='checkbox' id='ch1'>
-			<label for='ch1' id='la1' class='item'>
-				<h2>자두</h2>
-			</label>
-			<div>
-				<div>
+			<div class='plum'>
+				<input type='checkbox' id='ch_plum'>
+				<label for='ch_plum' class='item'>
+					<h2>자두</h2>
+				</label>
+				<div class='popup'>
+					<label for='ch_plum'>닫기</label>
 					<h2>자두</h2>
 					<h3>고르기</h3>
 					<h3>손질하기</h3>
 					<h3>보관하기</h3>
 				</div>
-				<label for='ch1'></label>
+			</div>
+				
+			<div class='lemon'>
+				<input type='checkbox' id='ch_lemon'>
+				<label for='ch_lemon' class='item'>
+					<h2>레몬</h2>
+				</label>
+				<div class='popup'>
+					<label for='ch_lemon'>닫기</label>
+					<h2>레몬</h2>
+					<h3>고르기</h3>
+					<h3>손질하기</h3>
+					<h3>보관하기</h3>
+				</div>
 			</div>
 			
-			<div class='item'>
-				<h2>레몬</h2>
-			</div>
+			
 			<div class='item'>
 				<h2>살구</h2>
 			</div>
