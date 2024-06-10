@@ -56,7 +56,7 @@
 		footer{padding-top:10px;}
 		
 		.main{
-			width: 70vw; margin: auto;
+			width: 75vw; margin: auto;
 		}
 		.filter_box{width: 700px; margin: auto;}
 		.flex{display: flex; flex-wrap: wrap;}
@@ -76,9 +76,11 @@
 		.blur{backdrop-filter: blur(30px); 
 			background: rgba(255,255,255,0.8);}
 
-		.item{width: 25%; height: 300px; padding: 0px, 15px;}
+		.item{width: 25%; height: 370px; padding: 0px, 15px;}
 		.item:hover{color: #fb7617;}
-		.item_img{width:220px; height:220px;}
+		.item_img{width:250px; height:250px;
+			cursor: pointer; }
+		.item_img_s{width:200px; height:200px;}
 
 		input{display: none;}
 
@@ -86,7 +88,7 @@
 			display: none; z-index: 100;
 			position: fixed; top:50%; left:50%;
 			transform:translate(-50%,-50%);
-			width: 400px; height:400px;
+			width: 400px; height:500px;
 			border-radius: 20px; 
 			backdrop-filter: blur(30px); 
 			background: rgba(255,255,255,0.6);
@@ -221,6 +223,12 @@
 			display: block;
 		}
 		#strawberry input:checked + label + div{
+			display: block;
+		}
+		#minari input:checked + label + div{
+			display: block;
+		}
+		#cucumber input:checked + label + div{
 			display: block;
 		}
 
